@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-heading: 'Staatliches';
+    --ff-texting: 'Roboto';
+    --ff-texting-secondary: 'Open Sans';
+
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #8E9AAF;
+
+    font-size: 62.5%;
+    --fs-heading: 4rem;
+    --fs-texting: 1.6rem;
+
+    --fc-heading: #ffffff
+}
+
+body {
+    font-family: var(--ff-heading);
+    color: var(--fc-heading);
+
+    background-color: var(--bg-primary);
+}
+
+.page {
+    text-align: center;
+}
+
+.head {
+    background-color: var(--bg-secondary);
+    width: 377px;
+    text-align: center;
+}
+
+.general {
+    display: flex;
+    gap: 9.8rem;
+}
+
+.head img {
+    margin-top: 3.2rem;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-heading);
+    line-height: 3.4rem;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    background-color: #CBC0D3;
+    padding: 2rem 7.3rem;
+
+    margin-top: 3.2rem;
+}
+
+p {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+
+    line-height: 2rem;
+
+    width: 27.5rem;
+    margin: 5.2rem 4.8rem 5.4rem;
+}
+
+.container {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas: 
+    "A B C"
+    "D B E"
+    "D F E";
+
+    margin-top: 6.4rem;
+}
+
+.container .card:nth-child(1) {
+    grid-area: A;
+}
+
+.container .card:nth-child(2) {
+    grid-area: B;
+}
+
+.container .card:nth-child(3) {
+    grid-area: C;
+}
+
+.container .card:nth-child(4) {
+    grid-area: D;
+}
+
+.container .card:nth-child(5) {
+    grid-area: F;
+}
+
+.container .card:nth-child(6) {
+    grid-area: E;
+}
+
+footer {
+
+    font-family: 'open-sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+
+    color: #4A4E69;
+    margin-top: 5rem;
+    margin-left: 16.4rem;
+
+}
+ footer span {
+    font-weight: bold;
+    color: black;
+}
+
